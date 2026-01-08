@@ -6,9 +6,9 @@
 // Input: "hello"
 // Output: "olleh"
 
-function getPalindrome(str){
+function getReverse(str){
     let newStr= str.split('').reverse("").join("");
     return newStr;
 }
-const reversedString=getPalindrome("hello")
+const reversedString=getReverse("hello")
 console.log(reversedString);

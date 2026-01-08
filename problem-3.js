@@ -8,10 +8,10 @@
 // Output: false
 
 function getPalindrome(str){
-    // get reverse
-    let revStr= str.split('').reverse("").join("");
-    //if both are equal
-    if (str===revStr){
+    // reverse 
+    let reversed=str.split("").reverse("").join("");
+    // same or not
+    if(str===reversed){
         return true;
     }
     return false;

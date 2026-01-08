@@ -6,18 +6,18 @@
 // Input: "programming"
 // Output: 3
 
-function findfVowels(str){
+function findVowels(str){
     let count =0;
     const char=str.split('');
+    // console.log(char);
 
     for(const item of char){
-        // console.log(item);
         if(item==='a'|| item==='e'||item==='i'||item==='o'|| item==='u'){
-            count++;
+            count++;//1,2,3
         }
     }
     return count;
 }
 const string= 'programming';
-const vowels= findfVowels(string);
+const vowels= findVowels(string);
 console.log(vowels)
