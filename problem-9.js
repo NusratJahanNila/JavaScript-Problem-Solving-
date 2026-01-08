@@ -2,13 +2,19 @@
 
 // Example:
 
-// Input: 5
+// Input: 5 :  1x2x3x4x5=120
 // Output: 120
 
-const num=5;
-let fact=1;
+const num =5;
+let fact = 1;
 
-for (i=1; i<=num; i++){
-    fact=fact * i;
+function getFactorial(num) {
+    for (i = 1; i <= num; i++) {
+        fact = fact * i;//1, 2, 6, 24,120
+    }
+    return fact;
 }
-console.log(fact);
+
+const factorial=getFactorial(num)
+
+console.log(factorial);
